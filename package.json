@@ -1,0 +1,15 @@
+{
+  "name": "kac-nakajima",
+  "version": "1.0.0",
+  "description": "kintone-attend-check for nakajima industrial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "y-okubo",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "puppeteer-core": "^14.1.1"
+  }
+}

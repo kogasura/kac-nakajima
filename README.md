@@ -4,6 +4,14 @@
 ## インストール
 `npm i kac-nakajima`
 
+## ログイン設定
+プロジェクトルートに`.env`を作成し、kintoneのログインに必要なユーザーIDとパスワードを設定してください
+
+```.env
+KINTONE_USERNAME=y-nakajima
+KINTONE_PASSWORD=lon9dY5kg6aRUs
+```
+
 ## 例
 例を`sample.js`に示します。
 

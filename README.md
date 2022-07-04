@@ -5,11 +5,11 @@
 `npm i kac-nakajima`
 
 ## ログイン設定
-プロジェクトルートに`.env`を作成し、kintoneのログインに必要なユーザーIDとパスワードを設定してください
+プロジェクトルートに`.env`を作成し、kintoneのログインに必要なユーザーIDとパスワードを設定してください。各自のkintoneのパスワードは定期的に更新されると思いますので、ご注意ください。
 
 ```.env
 KINTONE_USERNAME=y-nakajima
-KINTONE_PASSWORD=lon9dY5kg6aRUs
+KINTONE_PASSWORD=lon9dY5kg6?aR$Us
 ```
 
 ## 例
@@ -21,10 +21,10 @@ const KACNakajima = require("kac-nakajima");
 kacNakajima = new KACNakajima();
 
 //出席
-kacNakajima.attend("2022-05-25","山崎製パン京都工場");
+kacNakajima.attend("2022-05-25","○○産業大阪工場");
 
-//休日を入力。２０２２年６月１日、２日、８日、９日に休日を入力します。
-kacNakajima.multipleHoliday(["1","2","8","9"],"06","2022")
+//休日を入力。２０２２年６月１日、２日、８日、15日に休日を入力します。
+kacNakajima.multipleHoliday(["01","02","08","15"],"06","2022")
 ```
 
 ## 関数
@@ -39,6 +39,6 @@ placeはデフォルトで本社に設定されています。他の場所を選
 時間は8:30出勤の17:30退勤で設定されておりこの時間以外の場合は使用することができません。
 
 ### multipleHoliday(dates,month,year)
-datesには配列を記入してください。`["1","2","8","9"]`これで１日２日８日９日を設定できます。
+datesには配列を記入してください。`["01","02","08","15"]`これで１日２日８日15日を設定できます。
 monthに月を指定してください。"01"や"12"など必ず二桁で入力してください。
 yearにはデフォルトで"2022"が設定されています。変更する場合は"2023"などと指定してください。

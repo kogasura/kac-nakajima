@@ -99,10 +99,12 @@ function KACNakajima() {
       page.waitForNavigation({ waitUntil: 'load' }),
       page.click("button.gaia-ui-actionmenu-save")
     ])
+    console.log(date+"を出勤として入力しました")
     await Promise.all([
       page.waitForNavigation({ waitUntil: 'load' }),
       page.goto('https://nakajima-industrial.cybozu.com/k/989/'),
     ])
+    await browser.close()
   }
 }
 module.exports = KACNakajima;

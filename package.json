@@ -1,6 +1,6 @@
 {
   "name": "kac-nakajima",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "kintone-attend-check for nakajima industrial",
   "main": "index.js",
   "scripts": {
